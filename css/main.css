@@ -1,0 +1,252 @@
+@font-face {
+  font-family: vazir;
+  src: url("../fonts/Vazir.woff2");
+}
+
+* {
+  font-family: vazir;
+}
+
+.navbar {
+  background-color: white; /* رنگ پس‌زمینه ثابت */
+  background-size: 10px; /* برای اطمینان از پوشش کامل پس‌زمینه */
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  display: none; /* Initially hide the submenu */
+  position: absolute;
+  top: 0;
+  right: 100%; /* Position the submenu to the right */
+  margin-top: -1px;
+  margin-right: 0.1rem;
+}
+
+.dropdown-submenu:hover .dropdown-menu {
+  display: block; /* Show the submenu on hover */
+}
+
+.basket-icon {
+  padding: 0.375rem 0.75rem; /* تنظیم padding مشابه با باکس جستجو */
+  border-radius: 0.25rem; /* گوشه‌های گرد مشابه باکس جستجو */
+  height: 38px; /* ارتفاع مشابه با باکس جستجو */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  
+
+}
+/* استایل برای بنر */
+.banner {
+  background-image: url("../images/pexels-olly-3769010.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white; /* رنگ متن بنر */
+}
+
+/* استایل برای دکمه‌ها */
+.banner .btn {
+  margin: 0 10px; /* فاصله بین دکمه‌ها */
+  font-size: 1.25rem; /* اندازه فونت دکمه‌ها */
+  transition: all 0.5s ease; /* انیمیشن برای تغییر رنگ */
+}
+
+.banner .btn-light {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* رنگ پس‌زمینه دکمه روشن با شفافیت */
+  color: #f5ac03e2; /* رنگ متن دکمه روشن */
+  border: 2px solid rgba(255, 255, 255, 0.7); /* حاشیه دکمه روشن با شفافیت */
+}
+
+.banner .btn-outline-light {
+  color: white; /* رنگ متن دکمه حاشیه‌دار با شفافیت */
+  border: 2px solid rgba(255, 255, 255, 0.7); /* رنگ حاشیه دکمه حاشیه‌دار با شفافیت */
+}
+
+.banner .btn-light:hover,
+.banner .btn-outline-light:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* رنگ پس‌زمینه دکمه هنگام هاور با شفافیت بیشتر */
+  color: #f5ac03e2; /* رنگ متن دکمه هنگام هاور */
+  border: 2px solid rgba(255, 255, 255, 0.3); /* رنگ حاشیه دکمه هنگام هاور با شفافیت بیشتر */
+}
+
+/* رنگ پس‌زمینه آیکون سرچ هنگام هاور */
+.input-group-append button:hover {
+  background-color: #f1bf49e2 !important;
+}
+
+/* رنگ خود آیکون در حالت عادی زرد */
+.input-group-append button i {
+  color: rgb(255, 183, 0);
+}
+.input-group-append button:hover i {
+  color: white;
+}
+
+.dropdown-menu {
+  border: none !important; /* حذف حاشیه‌های پیش‌فرض */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* اضافه کردن سایه برای منوی دراپ‌داون */
+}
+
+.dropdown-menu .dropdown-item {
+  color: #343a40; /* رنگ متن تیره */
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: rgba(
+    255,
+    193,
+    7,
+    0.7
+  ) !important; /* پس‌زمینه زرد شفاف با شفافیت 70% */
+  color: #ffffff; /* رنگ متن سفید */
+}
+
+.dropdown-menu .dropdown-item.active {
+  background-color: rgba(
+    52,
+    58,
+    64,
+    0.7
+  ) !important; /* پس‌زمینه تیره شفاف با شفافیت 70% */
+  color: #ffffff; /* رنگ متن سفید */
+}
+/* تنظیمات عمومی برای ساب‌منوها */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  margin-top: -1px;
+}
+
+.features {
+  background-color: white;
+}
+
+.products {
+  background-color: #f5ac03e2;
+}
+
+.product-img {
+  width: 100%;
+  height: 230px; /* ارتفاع ثابت برای ایجاد مربع */
+  object-fit: cover; /* پوشش تصویر درون مربع */
+  max-width: 230px; /* حداکثر عرض تصاویر */
+  max-height: 230px; /* حداکثر ارتفاع تصاویر */
+}
+
+.carousel-container {
+  position: relative;
+  padding-top: 60px; /* Adjust padding to fit header */
+}
+.carousel-header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8); /* Background with some transparency */
+  border-bottom: 1px solid #ddd; /* Optional border for separation */
+}
+.carousel-item {
+  display: flex;
+  justify-content: center; /* Center the row horizontally */
+}
+.carousel-item .row {
+  display: flex;
+  justify-content: center; /* Center cards in the row */
+  flex-wrap: nowrap; /* Ensure cards stay in a single row */
+  margin: 0; /* Remove margin around the row */
+}
+.carousel-item .col-md-3 {
+  display: flex;
+  justify-content: center; /* Center the card horizontally */
+}
+.carousel-item .card {
+  width: 280px; /* Adjust the width of the card */
+  height: 350px; /* Fixed height for card */
+  margin: 10px; /* Adjust spacing between cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to cards */
+  transition: transform 0.2s; /* Smooth transition for hover effect */
+  overflow: hidden; /* Ensure content does not overflow */
+}
+.carousel-item .card img {
+  height: 150px; /* Fixed height for card image */
+  object-fit: cover; /* Ensure image covers the area */
+}
+.carousel-item .card-body {
+  height: 200px; /* Adjust body height to fit content */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.carousel-item .card:hover {
+  transform: scale(1.05); /* Slightly enlarge card on hover */
+}
+.carousel-control-prev,
+.carousel-control-next {
+  filter: invert(100%); /* Optional: Make controls visible */
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Optional: Background for visibility */
+}
+/* برای حالت‌های موبایل و تبلت */
+@media (max-width: 992px) {
+  .navbar.fixed-top {
+    position: relative; /* تغییر موقعیت نوار ناوبری در تبلت و موبایل */
+  }
+}
+
+/* تنظیمات برای حالت موبایل و تبلت */
+@media (max-width: 992px) {
+  .dropdown-submenu .dropdown-menu {
+    right: auto;
+    left: 100%; /* قرار دادن ساب‌منو به سمت چپ */
+    margin-left: 0.1rem; /* فاصله از لبه */
+  }
+}
+@supports (column-gap: 10px) {
+  /* ویژگی‌های مربوط به column-gap */
+}
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css");
+
+.titele{
+  
+  color: rgb(249, 249, 249);
+  font-weight:900 !important;
+
+  
+
+}
